@@ -111,3 +111,28 @@ main {
    }
 }
 
+footer {
+   .footer-info {
+      div {
+         h6 {
+            font-weight: bold;
+         }
+         ul {
+            li {
+               font-size: 0.85em;
+            }
+         }
+      }
+      &:nth-child(1) {
+         img {
+            width: 10rem;
+         }
+      }
+   }
+   .footer-copy {
+      background-color: #414141;
+      span {
+         font-size: 0.75em;
+      }
+   }
+}

@@ -77,4 +77,20 @@ main .page-products .sec-products .list-products .card .card-body .btn-quantity:
   background-color: #F49715;
 }
 
+footer .footer-info div h6 {
+  font-weight: bold;
+}
+footer .footer-info div ul li {
+  font-size: 0.85em;
+}
+footer .footer-info:nth-child(1) img {
+  width: 10rem;
+}
+footer .footer-copy {
+  background-color: #414141;
+}
+footer .footer-copy span {
+  font-size: 0.75em;
+}
+
 /*# sourceMappingURL=style.css.map */

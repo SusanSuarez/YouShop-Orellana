@@ -1,0 +1,389 @@
+[
+    {
+        "idProducto": "P001",
+        "nombre": "Xiaomi Redmi 10C 4GB-64GB - Azul",
+        "marca": "Xiaomi",
+        "categoria": "Celulares",
+        "precio": 549.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/29689258-1600-auto",
+        "ratio": 4.7
+    },
+    {
+        "idProducto": "P002",
+        "nombre": "Xiaomi Redmi Note 10 Pro 128GB 6GB RAM Azul",
+        "marca": "Xiaomi",
+        "categoria": "Celulares",
+        "precio": 1399.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22772419-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P003",
+        "nombre": "Xiaomi Redmi note 11 PRO 128GB 6GB Gris",
+        "marca": "Xiaomi",
+        "categoria": "Celulares",
+        "precio": 1049.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/24435089-1600-auto",
+        "ratio": 4.9
+    },
+    {
+        "idProducto": "P004",
+        "nombre": "Xiaomi Mi 11T PRO 5G 256GB 8GB RAM Negro",
+        "marca": "Xiaomi",
+        "categoria": "Celulares",
+        "precio": 2278.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/21817102-1600-auto",
+        "ratio": 4.5
+    },
+    {
+        "idProducto": "P005",
+        "nombre": "Xiaomi Poco X4 Pro 5G 256GB 8GB Ram Negro",
+        "marca": "Xiaomi",
+        "categoria": "Celulares",
+        "precio": 1549.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22089723-1600-auto",
+        "ratio": 4.6
+    },
+    {
+        "idProducto": "P006",
+        "nombre": "Samsung Galaxy Note 10+ Plus 256GB - Negro",
+        "marca": "Samsung",
+        "categoria": "Celulares",
+        "precio": 2199.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17827575-1600-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P007",
+        "nombre": "Samsung Galaxy S20+ Plus 5G 128GB 12GB RAM - Negro",
+        "marca": "Samsung",
+        "categoria": "Celulares",
+        "precio": 2349.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17827496-1600-auto",
+        "ratio": 4.8
+    },
+    {
+        "idProducto": "P008",
+        "nombre": "Samsung Galaxy S22 Ultra 5G 256GB 12GB RAM - Negro",
+        "marca": "Samsung",
+        "categoria": "Celulares",
+        "precio": 5199.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22607198-1600-auto",
+        "ratio": 4.6
+    },
+    {
+        "idProducto": "P009",
+        "nombre": "Samsung Galaxy A52S 5G 128GB 6GB RAM Blanco",
+        "marca": "Samsung",
+        "categoria": "Celulares",
+        "precio": 1498.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/23200524-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P010",
+        "nombre": "Samsung Galaxy A23 6.6 4GB RAM 128GB Negro",
+        "marca": "Samsung",
+        "categoria": "Celulares",
+        "precio": 849.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/23309980-1600-auto",
+        "ratio": 4.6
+    },
+    {
+        "idProducto": "P011",
+        "nombre": "Iphone 13 Pro Max 128GB - Grafito",
+        "marca": "Apple",
+        "categoria": "Celulares",
+        "precio": 7435.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/20001989-1600-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P012",
+        "nombre": "Iphone 13 6.1 4GB RAM 128GB MIDNIGHT",
+        "marca": "Apple",
+        "categoria": "Celulares",
+        "precio": 4799.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22776819-1600-auto",
+        "ratio": 4.3
+    },
+    {
+        "idProducto": "P013",
+        "nombre": "iPhone 12 128GB Blue Chip A14",
+        "marca": "Apple",
+        "categoria": "Celulares",
+        "precio": 3995.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17543655-1600-auto",
+        "ratio": 4.8
+    },
+    {
+        "idProducto": "P014",
+        "nombre": "iPhone 11 64GB Negro",
+        "marca": "Apple",
+        "categoria": "Celulares",
+        "precio": 2559.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22772395-1600-auto",
+        "ratio": 4.6
+    },
+    {
+        "idProducto": "P015",
+        "nombre": "Iphone 11 Apple 128Gb White",
+        "marca": "Apple",
+        "categoria": "Celulares",
+        "precio": 3199.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17241863-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P016",
+        "nombre": "Laptop ASUS FA506IC-HN042W 15.6 AMD Ryzen 5 (4000 series) 8GB 512GB SSD",
+        "marca": "Asus",
+        "categoria": "Laptops",
+        "precio": 3799.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/29559164-1600-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P017",
+        "nombre": "Laptop ASUS G513IC-HN046W 15.6 AMD Ryzen 7 (4000 series) 16GB 512GB SSD",
+        "marca": "Asus",
+        "categoria": "Laptops",
+        "precio": 5099.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22976778-1600-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P018",
+        "nombre": "Laptop ASUS X515EA-EJ921W 15.6 Intel Core i5 11va generación 8GB 512GB SSD",
+        "marca": "Asus",
+        "categoria": "Laptops",
+        "precio": 2049.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17870759-1600-auto",
+        "ratio": 4.3
+    },
+    {
+        "idProducto": "P019",
+        "nombre": "Laptop ASUS FX506LHB-HN323W 15.6 Intel Core i5 10ma generación 8GB 512GB SSD",
+        "marca": "Asus",
+        "categoria": "Laptops",
+        "precio": 2899.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/29436852-1600-auto",
+        "ratio": 4.7
+    },
+    {
+        "idProducto": "P020",
+        "nombre": "MacBook Pro 14 Apple Chip M1 Pro 2021 16Gb Ram 512Gb Ssd Silver",
+        "marca": "Apple",
+        "categoria": "Laptops",
+        "precio": 9999.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22082169-1600-auto",
+        "ratio": 4.8
+    },
+    {
+        "idProducto": "P021",
+        "nombre": "Apple MacBook Air 13.3 Chip M1 16GB 512GB SSD Space Gray Late 2020",
+        "marca": "Apple",
+        "categoria": "Laptops",
+        "precio": 6805.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17543337-1600-auto",
+        "ratio": 4.7
+    },
+    {
+        "idProducto": "P022",
+        "nombre": "Apple Macbook Pro 16 Intel Core i9 16GB RAM 1TB SSD 4GB Video Space Gray",
+        "marca": "Apple",
+        "categoria": "Laptops",
+        "precio": 9999.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17308261-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P022",
+        "nombre": "Laptop HP Pavilion x360 FHD 14 14-dy0007la iCore i5-1135G7 8GB RAM 256GB SSD",
+        "marca": "HP",
+        "categoria": "Laptops",
+        "precio": 2399.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/24848813-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P023",
+        "nombre": "Laptop HP 15.6 15-ef2502la 8GB RAM 256GB SSD",
+        "marca": "HP",
+        "categoria": "Laptops",
+        "precio": 1399.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/26999992-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P024",
+        "nombre": "Notebook HP 15-ef2507la 15.6 AMD Ryzen 5 (5000 series) 8GB 512GB SSD",
+        "marca": "HP",
+        "categoria": "Laptops",
+        "precio": 1999.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/25177090-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P025",
+        "nombre": "Samsung Tab S6 Lite 10.4 4GB RAM 64GB SM-P613NZALPEO Gris",
+        "marca": "Samsung",
+        "categoria": "Tablets",
+        "precio": 1199.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/30107295-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P026",
+        "nombre": "Galaxy Tab S8 + Keyboard Cover 11 SM-X700NZAVPEO 8GB RAM 128 GB Grafito",
+        "marca": "Samsung",
+        "categoria": "Tablets",
+        "precio": 3699.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/23055135-1600-auto",
+        "ratio": 4.3
+    },
+    {
+        "idProducto": "P027",
+        "nombre": "Tablet SAMSUNG Galaxy S7 12.4'' 4GB 64GB Negro",
+        "marca": "Samsung",
+        "categoria": "Tablets",
+        "precio": 2099.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17862791-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P028",
+        "nombre": "Tablet Huawei Matepad 11 256GB + Regalo",
+        "marca": "Huawei",
+        "categoria": "Tablets",
+        "precio": 2249.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22985798-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P029",
+        "nombre": "Tablet Huawei Matepad T10S 64 GB + Cover + Regalo",
+        "marca": "Huawei",
+        "categoria": "Tablets",
+        "precio": 659.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/21732632-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P030",
+        "nombre": "Tablet HUAWEI Matepad 10.4 8 4GB 128GB Midnight Grey",
+        "marca": "Huawei",
+        "categoria": "Tablets",
+        "precio": 999.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/16632588-800-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P031",
+        "nombre": "iPad Pro 12.9 512GB Wi-Fi Space Gray Chip M1 2021",
+        "marca": "Apple",
+        "categoria": "Tablets",
+        "precio": 6775.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17543654-1600-auto",
+        "ratio": 4.0
+    },
+    {
+        "idProducto": "P032",
+        "nombre": "iPad Pro 11 256GB Wi-Fi/Cellular Silver Chip M1 2021",
+        "marca": "Apple",
+        "categoria": "Tablets",
+        "precio": 5865.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17543746-1600-auto",
+        "ratio": 4.0
+    },
+    {
+        "idProducto": "P033",
+        "nombre": "Ipad Air Apple M1 WiFi 2022 5th Generación 10.9 64Gb Pink",
+        "marca": "Apple",
+        "categoria": "Tablets",
+        "precio": 3199.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22982450-1600-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P034",
+        "nombre": "iPad Pro 12.9 256GB Wi-Fi Silver Chip M1 2021",
+        "marca": "Apple",
+        "categoria": "Tablets",
+        "precio": 6965.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17543613-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P035",
+        "nombre": "Cooler Cybercool HA-80 Aluminio Hasta 15.6 Pulgadas Led Azul",
+        "marca": "Cybercool",
+        "categoria": "Accesorios",
+        "precio": 95.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/16677558-1600-auto",
+        "ratio": 4.1
+    },
+    {
+        "idProducto": "P036",
+        "nombre": "Cooler para Notebook Gaming Antryx Xtreme Air X500, Up To 17",
+        "marca": "Antryx",
+        "categoria": "Accesorios",
+        "precio": 159.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/16698997-1600-auto",
+        "ratio": 4.0
+    },
+    {
+        "idProducto": "P037",
+        "nombre": "Adaptador de Red TP Link UE306 Gigabit RJ45 a USB 3.0",
+        "marca": "TP-Link",
+        "categoria": "Accesorios",
+        "precio": 99.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22255512-1600-auto",
+        "ratio": 4.2
+    },
+    {
+        "idProducto": "P038",
+        "nombre": "Hub Baseus Dockins Station 10 en 1",
+        "marca": "Baseus",
+        "categoria": "Accesorios",
+        "precio": 299.90,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17535391-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P039",
+        "nombre": "Power Bank 20000 Mah Xiaomi Carga Rápida Negro",
+        "marca": "Xiaomi",
+        "categoria": "Accesorios",
+        "precio": 109.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/17445491-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P040",
+        "nombre": "Memoria Micro SD 128GB Kingston Clase 10",
+        "marca": "Kingston",
+        "categoria": "Accesorios",
+        "precio": 69.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/18361265-1600-auto",
+        "ratio": 4.3
+    },
+    {
+        "idProducto": "P041",
+        "nombre": "Cargador Apple de Carga Rápida USB C de 20W + Cable Lightning a USB C 1m",
+        "marca": "Apple",
+        "categoria": "Accesorios",
+        "precio": 459.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22601400-1600-auto",
+        "ratio": 4.5
+    },
+    {
+        "idProducto": "P042",
+        "nombre": "Memoria Samsung Micro SD 128GB Evo Plus 4K",
+        "marca": "Samsung",
+        "categoria": "Accesorios",
+        "precio": 89.90,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/15696069-1600-auto",
+        "ratio": 4.5
+    }
+]
