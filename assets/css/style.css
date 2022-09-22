@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+body {
+  background-color: #F5F5F5;
+  font-family: "Prompt", sans-serif;
+}
+
+header .navbar.navbar-dark .container-fluid .navbar-brand img {
+  width: 10rem;
+}
+header .navbar.navbar-dark .container-fluid .ref-nav {
+  width: 3.5rem;
+}
+header .navbar.navbar-dark .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fafafa;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+header .navbar.navbar-dark .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
+}
+header .navbar.navbar-dark .container-fluid .navbar-collapse .navbar-nav .nav-item img {
+  width: 10rem;
+}
+
+main .page-idx nav {
+  font-size: 0.85em;
+}
+main .page-products .sec-filter .list-group .text-category a {
+  font-size: 0.85em;
+  text-decoration: none;
+  color: #000;
+}
+main .page-products .sec-filter .list-group .text-category a span {
+  background-color: #F49715;
+}
+main .page-products .sec-filter .list-group .form-switch {
+  font-size: 0.85em;
+}
+main .page-products .sec-products .list-products .card .card-body {
+  line-height: 0.9em;
+}
+main .page-products .sec-products .list-products .card .card-body .name-p {
+  line-height: normal;
+  font-size: 0.9em;
+  height: 4.15rem;
+}
+main .page-products .sec-products .list-products .card .card-body .mark-p {
+  font-size: 0.7em;
+}
+main .page-products .sec-products .list-products .card .card-body .price-p {
+  font-weight: bold;
+  color: #F49715;
+}
+main .page-products .sec-products .list-products .card .card-body .input-group .btn {
+  color: #F49715;
+  font-weight: bolder;
+}
+main .page-products .sec-products .list-products .card .card-body .input-group input {
+  font-size: 0.75em !important;
+  border: 0;
+}
+main .page-products .sec-products .list-products .card .card-body .input-group input::-webkit-outer-spin-button, main .page-products .sec-products .list-products .card .card-body .input-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+main .page-products .sec-products .list-products .card .card-body .btn-quantity {
+  font-size: 0.85em;
+  color: black;
+  border-color: #F49715;
+}
+main .page-products .sec-products .list-products .card .card-body .btn-quantity:hover {
+  color: white;
+  border-color: #F49715;
+  background-color: #F49715;
+}
+
+/*# sourceMappingURL=style.css.map */

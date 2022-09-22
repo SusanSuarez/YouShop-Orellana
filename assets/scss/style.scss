@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body {
+   background-color: #F5F5F5;
+   font-family: 'Prompt', sans-serif;
+}
+
+header {
+   .navbar.navbar-dark {
+      .container-fluid {
+         .navbar-brand {
+            img {
+               width: 10rem;
+            }
+         }
+         .ref-nav {
+            width: 3.5rem;
+         }
+         .navbar-collapse {
+            .navbar-nav {
+               .nav-item {
+                  .nav-link {
+                     color: #fafafa;
+                     font-size: 1em;
+                     text-transform: uppercase;
+                     font-weight: 300;
+                     &:hover {
+                        color: #fff;
+                        text-shadow: 0 0 1px #fff;
+                     }
+                  }
+                  img {
+                     width: 10rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+main {
+   .page-idx {
+      nav {
+         font-size: 0.85em;
+      }
+   }
+   .page-products {
+      .sec-filter {
+         .list-group {
+            .text-category a {
+               font-size: 0.85em;
+               text-decoration: none;
+               color: #000;
+               span {
+                  background-color: #F49715;
+               }
+            }
+            .form-switch {
+               font-size: 0.85em;
+            }
+            
+         }
+      }
+      .sec-products {
+         .list-products{
+            .card {
+               .card-body {
+                  line-height: 0.9em;
+                  .name-p {
+                     line-height: normal;
+                     font-size: 0.9em;
+                     height: 4.15rem;
+                  }
+                  .mark-p {
+                     font-size: 0.7em;
+                  }
+                  .price-p {
+                     font-weight: bold;
+                     color: #F49715;
+                  }
+                  .input-group {
+                     .btn {
+                        color: #F49715;
+                        font-weight: bolder;
+                     }
+                     input {
+                        font-size: 0.75em !important;
+                        border: 0;
+                     }
+                     input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                        -moz-appearance: textfield;
+                     }
+                  }
+                  .btn-quantity {
+                     font-size: 0.85em;
+                     color: black;
+                     border-color: #F49715;
+                     &:hover {
+                        color: white;
+                        border-color: #F49715;
+                        background-color: #F49715;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
