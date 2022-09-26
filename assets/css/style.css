@@ -42,9 +42,9 @@ main .page-products .sec-products .list-products .card .card-body {
   line-height: 0.9em;
 }
 main .page-products .sec-products .list-products .card .card-body .name-p {
-  line-height: normal;
-  font-size: 0.9em;
-  height: 4.15rem;
+  line-height: 1.25em;
+  font-size: 0.875em;
+  height: 4.5rem;
 }
 main .page-products .sec-products .list-products .card .card-body .mark-p {
   font-size: 0.7em;

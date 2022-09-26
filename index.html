@@ -75,7 +75,7 @@
                 </nav>
                 <div class="d-flex justify-content-between">
                     <p class="text-muted w-50 my-auto">
-                        <span>#</span> Resultados en <span>Categoria</span>
+                        <span id="numItems"></span> Resultados</span>
                     </p>
                     <div class="w-50 row align-items-center">
                         <label class="text-muted col-12 col-md col-lg-7 text-start text-md-end">Ordenar por:</label>
@@ -203,25 +203,25 @@
                                 <p class="text-category">
                                     <a class="d-flex justify-content-between align-items-center" href="#">
                                         Celulares
-                                        <span class="badge rounded-pill">#</span>
+                                        <span class="badge rounded-pill" id="catCelulares">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
                                     <a class="d-flex justify-content-between align-items-center" href="#">
                                         Laptops
-                                        <span class="badge rounded-pill">#</span>
+                                        <span class="badge rounded-pill" id="catLaptops">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
                                     <a class="d-flex justify-content-between align-items-center" href="#">
                                         Tablets
-                                        <span class="badge rounded-pill">#</span>
+                                        <span class="badge rounded-pill" id="catTablets">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
                                     <a class="d-flex justify-content-between align-items-center" href="#">
                                         Accesorios
-                                        <span class="badge rounded-pill">#</span>
+                                        <span class="badge rounded-pill" id="catAccesorios">#</span>
                                     </a>
                                 </p> 
                             </div>
@@ -232,24 +232,7 @@
                             </a>
                             <!-- Lista de marcas -->
                             <div class="collapse mx-3 py-2" id="MarcasCollapse">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="boxMarca1">
-                                    <label class="form-check-label" for="boxMarca1">
-                                        Marca 1
-                                    </label>
-                                </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="boxMarca2">
-                                    <label class="form-check-label" for="boxMarca2">
-                                        Marca 2
-                                    </label>
-                                </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="boxMarca3">
-                                    <label class="form-check-label" for="boxMarca3">
-                                        Marca 3
-                                    </label>
-                                </div>
+                                <!-- Marcas -->
                             </div>
                             
                             <a class="list-group-item" data-bs-toggle="collapse" href="#PrecioCollapse" aria-expanded="false">
@@ -268,8 +251,8 @@
                                 </div>
                                 <div class="slider-content">
                                     <div class="slider-track"></div>
-                                    <input type="range" min="0" max="500" value="0" id="price-1" oninput="slideOne()">
-                                    <input type="range" min="0" max="500" value="100" id="price-2" oninput="slideTwo()">
+                                    <input type="range" id="price-1" oninput="slideOne()">
+                                    <input type="range" id="price-2" oninput="slideTwo()">
                                 </div>
                             </div>
 
@@ -279,200 +262,8 @@
                 </div>
                 <!-- List Products -->
                 <div class="sec-products col col-lg-9">
-                    <div class="list-products row g-3">
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://realplaza.vtexassets.com/arquivos/ids/29689258-1600-auto" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                            <div class="shadow card rounded-3">
-                                <img src="https://promart.vteximg.com.br/arquivos/ids/5966805-444-444/image-e4145c2f703b471686dba09d2c8c8a39.jpg?v=637923100907130000" class="card-img-top rounded-top rounded-3">
-                                <div class="card-body py-1">
-                                    <p class="name-p m-0">Xioami Redmi 9A 2GB RAM 32GB</p>
-                                    <p class="text-muted mark-p">Marca: <span>Xioami</span></p>
-                                    <p class="price-p m-0 mb-1">S/<span>379.00</span></p>
-                                    <hr class="my-2">
-                                    <div class="row">
-                                        <div class="input-group mb-1 px-1 col">
-                                            <button class="btn px-1" type="button">
-                                                -
-                                            </button>
-                                            <input type="number" class="form-control text-center px-0" value="1">
-                                            <button class="btn px-1" type="button">
-                                                +
-                                            </button>
-                                        </div>
-                                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="list-products row g-3" id="lista-p">                        
+                        <!-- Products -->
                     </div>
                 </div>
             </div>

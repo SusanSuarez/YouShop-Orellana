@@ -104,7 +104,7 @@
         "marca": "Apple",
         "categoria": "Celulares",
         "precio": 4799.00,
-        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22776819-1600-auto",
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22776816-1600-auto",
         "ratio": 4.3
     },
     {
@@ -198,7 +198,7 @@
         "ratio": 4.2
     },
     {
-        "idProducto": "P022",
+        "idProducto": "P023",
         "nombre": "Laptop HP Pavilion x360 FHD 14 14-dy0007la iCore i5-1135G7 8GB RAM 256GB SSD",
         "marca": "HP",
         "categoria": "Laptops",
@@ -207,7 +207,7 @@
         "ratio": 4.2
     },
     {
-        "idProducto": "P023",
+        "idProducto": "P024",
         "nombre": "Laptop HP 15.6 15-ef2502la 8GB RAM 256GB SSD",
         "marca": "HP",
         "categoria": "Laptops",
@@ -216,7 +216,7 @@
         "ratio": 4.2
     },
     {
-        "idProducto": "P024",
+        "idProducto": "P025",
         "nombre": "Notebook HP 15-ef2507la 15.6 AMD Ryzen 5 (5000 series) 8GB 512GB SSD",
         "marca": "HP",
         "categoria": "Laptops",
@@ -225,7 +225,7 @@
         "ratio": 4.2
     },
     {
-        "idProducto": "P025",
+        "idProducto": "P026",
         "nombre": "Samsung Tab S6 Lite 10.4 4GB RAM 64GB SM-P613NZALPEO Gris",
         "marca": "Samsung",
         "categoria": "Tablets",
@@ -234,7 +234,7 @@
         "ratio": 4.4
     },
     {
-        "idProducto": "P026",
+        "idProducto": "P027",
         "nombre": "Galaxy Tab S8 + Keyboard Cover 11 SM-X700NZAVPEO 8GB RAM 128 GB Grafito",
         "marca": "Samsung",
         "categoria": "Tablets",
@@ -243,7 +243,7 @@
         "ratio": 4.3
     },
     {
-        "idProducto": "P027",
+        "idProducto": "P028",
         "nombre": "Tablet SAMSUNG Galaxy S7 12.4'' 4GB 64GB Negro",
         "marca": "Samsung",
         "categoria": "Tablets",
@@ -252,25 +252,25 @@
         "ratio": 4.2
     },
     {
-        "idProducto": "P028",
+        "idProducto": "P029",
         "nombre": "Tablet Huawei Matepad 11 256GB + Regalo",
         "marca": "Huawei",
         "categoria": "Tablets",
         "precio": 2249.00,
-        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22985798-1600-auto",
-        "ratio": 4.4
-    },
-    {
-        "idProducto": "P029",
-        "nombre": "Tablet Huawei Matepad T10S 64 GB + Cover + Regalo",
-        "marca": "Huawei",
-        "categoria": "Tablets",
-        "precio": 659.00,
-        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/21732632-1600-auto",
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22985797-1600-auto",
         "ratio": 4.4
     },
     {
         "idProducto": "P030",
+        "nombre": "Tablet Huawei Matepad T10S 64 GB + Cover + Regalo",
+        "marca": "Huawei",
+        "categoria": "Tablets",
+        "precio": 659.00,
+        "imagen": "https://realplaza.vtexassets.com/arquivos/ids/22195301-1600-auto",
+        "ratio": 4.4
+    },
+    {
+        "idProducto": "P031",
         "nombre": "Tablet HUAWEI Matepad 10.4 8 4GB 128GB Midnight Grey",
         "marca": "Huawei",
         "categoria": "Tablets",
@@ -279,7 +279,7 @@
         "ratio": 4.1
     },
     {
-        "idProducto": "P031",
+        "idProducto": "P032",
         "nombre": "iPad Pro 12.9 512GB Wi-Fi Space Gray Chip M1 2021",
         "marca": "Apple",
         "categoria": "Tablets",
@@ -288,7 +288,7 @@
         "ratio": 4.0
     },
     {
-        "idProducto": "P032",
+        "idProducto": "P033",
         "nombre": "iPad Pro 11 256GB Wi-Fi/Cellular Silver Chip M1 2021",
         "marca": "Apple",
         "categoria": "Tablets",
@@ -297,7 +297,7 @@
         "ratio": 4.0
     },
     {
-        "idProducto": "P033",
+        "idProducto": "P034",
         "nombre": "Ipad Air Apple M1 WiFi 2022 5th Generación 10.9 64Gb Pink",
         "marca": "Apple",
         "categoria": "Tablets",
@@ -306,7 +306,7 @@
         "ratio": 4.1
     },
     {
-        "idProducto": "P034",
+        "idProducto": "P035",
         "nombre": "iPad Pro 12.9 256GB Wi-Fi Silver Chip M1 2021",
         "marca": "Apple",
         "categoria": "Tablets",
@@ -315,7 +315,7 @@
         "ratio": 4.4
     },
     {
-        "idProducto": "P035",
+        "idProducto": "P036",
         "nombre": "Cooler Cybercool HA-80 Aluminio Hasta 15.6 Pulgadas Led Azul",
         "marca": "Cybercool",
         "categoria": "Accesorios",
@@ -324,7 +324,7 @@
         "ratio": 4.1
     },
     {
-        "idProducto": "P036",
+        "idProducto": "P037",
         "nombre": "Cooler para Notebook Gaming Antryx Xtreme Air X500, Up To 17",
         "marca": "Antryx",
         "categoria": "Accesorios",
@@ -333,7 +333,7 @@
         "ratio": 4.0
     },
     {
-        "idProducto": "P037",
+        "idProducto": "P038",
         "nombre": "Adaptador de Red TP Link UE306 Gigabit RJ45 a USB 3.0",
         "marca": "TP-Link",
         "categoria": "Accesorios",
@@ -342,7 +342,7 @@
         "ratio": 4.2
     },
     {
-        "idProducto": "P038",
+        "idProducto": "P039",
         "nombre": "Hub Baseus Dockins Station 10 en 1",
         "marca": "Baseus",
         "categoria": "Accesorios",
@@ -351,7 +351,7 @@
         "ratio": 4.4
     },
     {
-        "idProducto": "P039",
+        "idProducto": "P040",
         "nombre": "Power Bank 20000 Mah Xiaomi Carga Rápida Negro",
         "marca": "Xiaomi",
         "categoria": "Accesorios",
@@ -360,7 +360,7 @@
         "ratio": 4.4
     },
     {
-        "idProducto": "P040",
+        "idProducto": "P041",
         "nombre": "Memoria Micro SD 128GB Kingston Clase 10",
         "marca": "Kingston",
         "categoria": "Accesorios",
@@ -369,7 +369,7 @@
         "ratio": 4.3
     },
     {
-        "idProducto": "P041",
+        "idProducto": "P042",
         "nombre": "Cargador Apple de Carga Rápida USB C de 20W + Cable Lightning a USB C 1m",
         "marca": "Apple",
         "categoria": "Accesorios",
@@ -378,7 +378,7 @@
         "ratio": 4.5
     },
     {
-        "idProducto": "P042",
+        "idProducto": "P043",
         "nombre": "Memoria Samsung Micro SD 128GB Evo Plus 4K",
         "marca": "Samsung",
         "categoria": "Accesorios",
