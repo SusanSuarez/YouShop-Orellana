@@ -39,6 +39,15 @@ header {
    }
 }
 
+.text-category a {
+   font-size: 1em;
+   text-decoration: none;
+   color: #000;
+   span {
+      background-color: #F49715;
+   }
+}
+
 main {
    .page-idx {
       nav {

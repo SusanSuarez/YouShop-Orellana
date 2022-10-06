@@ -1,11 +1,29 @@
 const orderInput = document.getElementById("selectOrder");
 const numItems = document.getElementById("numItems");
+const filter_nav = document.getElementById("normal-filter");
+const off_filter = document.getElementById("offcanvas-filter");
+let isNewFilter = false;
+let newFilter;
 let allProducts = true;
+let totalProducts = [];
+let actualProducts = [];
+let filterProducts = [];
+
 window.addEventListener('load', () => {
     orderBy(0);
+    responsiveFilter();
+    initUI();
 });
 
 class Producto {
+    //Atributos
+    idProducto;
+    nombre;
+    marca;
+    categoria;
+    precio;
+    imagen;
+    ratio;
     // Constructor
     constructor(idProducto,nombre,marca,categoria,precio,imagen,ratio){
         this.idProducto = idProducto;
@@ -29,13 +47,19 @@ async function getAllProducts() {
     data.forEach(p => {
         productos.push(new Producto(p.idProducto, p.nombre, p.marca, p.categoria, parseFloat(p.precio), p.imagen, p.ratio));
     });
+    totalProducts = productos;
+    actualProducts = totalProducts;
     return productos;
 }
 
 
-async function orderBy(order) {
-    let products = await getAllProducts();
-    actualizarIndicadores(products);
+async function orderBy(order, lista) {
+    let products;
+    if (lista == undefined) {
+        products = await getAllProducts();
+    } else {
+        products = lista;
+    }
     switch (order) {
         case 0:
             products.sort((i, j) => j.ratio - i.ratio);
@@ -53,14 +77,22 @@ async function orderBy(order) {
             products.sort((i, j) => j.nombre.localeCompare(i.nombre));
             break;
     }
-    //console.table(products);
+
+    actualizarIndicadores(products);
+
     mostrarProductos(products);
 }
 
+
 orderInput.addEventListener("change", function () {
-    orderBy(parseInt(this.value));
+    if (filterProducts.length == 0) {
+        orderBy(parseInt(this.value), actualProducts);
+    } else {
+        orderBy(parseInt(this.value), filterProducts);
+    }
 });
 
+// Actualizar los items del Filtrador
 function actualizarIndicadores(products) {
     numItems.innerText = products.length;
     if (allProducts) {
@@ -73,32 +105,75 @@ function actualizarIndicadores(products) {
         let accesorios = products.filter(prod => prod.categoria == "Accesorios").length;
         document.getElementById("catAccesorios").innerText = accesorios;
     }
-    const marcas = [... new Set(products.map(data => data.marca))];
-    let marcasHTML = "";
-    marcas.forEach(marca => {
-        marcasHTML += `
-        <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="box`+marca+`">
-            <label class="form-check-label" for="box`+marca+`">
-                `+marca+`
-            </label>
-        </div>
-        `;
-    });
-    document.getElementById("MarcasCollapse").innerHTML = marcasHTML;
+    if (filterProducts.length == 0) {
+        const marcas = [... new Set(products.map(data => data.marca))];
+        let marcasHTML = "";
+        marcas.forEach(marca => {
+            marcasHTML += `
+            <div class="form-check form-switch">
+                <input class="form-check-input switch-marca" type="checkbox" id="box`+marca+`" mark="`+marca+`">
+                <label class="form-check-label" for="box`+marca+`">
+                    `+marca+`
+                </label>
+            </div>
+            `;
+        });
+        
+        document.getElementById("MarcasCollapse").innerHTML = marcasHTML;
+        
+        // Buscar por Marcas
+        const boxMarcas = document.getElementsByClassName("switch-marca");
+
+        for (let i = 0; i < boxMarcas.length; i++) {
+            boxMarcas[i].addEventListener('change',(e) => {
+                let marcas = [];
+                for (let j = 0; j < boxMarcas.length; j++) {
+                    if (boxMarcas[j].checked) {
+                        marcas.push(boxMarcas[j].getAttribute("mark"));
+                    }
+                }
+                filterProducts = buscarMarcas(marcas,actualProducts);
+                filterProducts = (marcas.length == 0)? actualProducts: filterProducts;
+                orderBy(parseInt(orderInput.value),filterProducts);
+            });
+        }
+
+        function buscarMarcas(marcas,products) {
+            let result = products.filter(item => {
+                if (marcas.includes(item.marca)) {
+                    return item;
+                }
+            });
+            return result;
+        }
+    }
+
     const precios = products.map(data => parseInt(data.precio));
 
     let min = Math.min.apply(null,precios);
     let max = Math.max.apply(null,precios);
-    document.getElementById("price-1").min = min;
-    document.getElementById("price-1").max = max;
-    document.getElementById("price-1").value = min;
-    document.getElementById("price-2").min = min;
-    document.getElementById("price-2").max = max;
-    document.getElementById("price-2").value = max;
+    sliderOne.min = min;
+    sliderOne.max = max;
+    sliderOne.value = min;
+    sliderTwo.min = min;
+    sliderTwo.max = max;
+    sliderTwo.value = max;
     slideOne();
     slideTwo();
 }
+
+//Buscar por Categoria
+const headerCategorias = document.getElementsByClassName("filter-all-cat");
+
+for (let i = 0; i < headerCategorias.length; i++) {
+    headerCategorias[i].addEventListener("click",() => {
+        let cat = headerCategorias[i].getAttribute("cat");
+        actualProducts = searchCategoria(cat, totalProducts);
+        filterProducts = [];
+        orderBy(parseInt(orderInput.value),actualProducts);
+    });
+}
+
 
 function mostrarProductos(products) {
     let html = "";

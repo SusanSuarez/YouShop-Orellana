@@ -29,34 +29,34 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 justify-content-around align-items-center d-none d-lg-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Celulares</a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Celulares">Celulares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Laptops</a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Laptops">Laptops</a>
                         </li>
                         <li class="nav-item">
                             <a href="./index.html"><img src="./assets/img/logo.svg" alt="logo"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tablets</a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Tablets">Tablets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Accesorios </a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Accesorios">Accesorios</a>
                         </li>
                     </ul>
                     <!-- Mobile Navbar -->
                     <ul class="navbar-nav w-100 d-flex d-lg-none justify-content-around align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Celulares</a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Celulares">Celulares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Laptops</a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Laptops">Laptops</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tablets</a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Tablets">Tablets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Accesorios </a>
+                            <a class="nav-link filter-all-cat" href="#" cat="Accesorios">Accesorios</a>
                         </li>
                     </ul>
                 </div>
@@ -98,90 +98,11 @@
 
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilter" aria-labelledby="offcanvasWithBackdropLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Filtrar por:</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <!-- <div class="list-group">
-                    <a class="list-group-item" data-bs-toggle="collapse" href="#CategoriasCollapse" aria-expanded="false">
-                        Categorias
-                    </a>
-                    Lista de Categorias
-                    <div class="collapse mx-3 py-2" id="CategoriasCollapse">
-                        <p class="text-category">
-                            <a class="d-flex justify-content-between align-items-center" href="#">
-                                Celulares
-                                <span class="badge rounded-pill">#</span>
-                            </a>
-                        </p> 
-                        <p class="text-category">
-                            <a class="d-flex justify-content-between align-items-center" href="#">
-                                Laptops
-                                <span class="badge rounded-pill">#</span>
-                            </a>
-                        </p> 
-                        <p class="text-category">
-                            <a class="d-flex justify-content-between align-items-center" href="#">
-                                Tablets
-                                <span class="badge rounded-pill">#</span>
-                            </a>
-                        </p> 
-                        <p class="text-category">
-                            <a class="d-flex justify-content-between align-items-center" href="#">
-                                Accesorios
-                                <span class="badge rounded-pill">#</span>
-                            </a>
-                        </p> 
-                    </div>
-
-                    <a class="list-group-item" data-bs-toggle="collapse"
-                        href="#MarcasCollapse" aria-expanded="false">
-                        Marcas
-                    </a>
-                    
-                    <div class="collapse mx-3 py-2" id="MarcasCollapse">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="boxMarca1">
-                            <label class="form-check-label" for="boxMarca1">
-                                Marca 1
-                            </label>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="boxMarca2">
-                            <label class="form-check-label" for="boxMarca2">
-                                Marca 2
-                            </label>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="boxMarca3">
-                            <label class="form-check-label" for="boxMarca3">
-                                Marca 3
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <a class="list-group-item" data-bs-toggle="collapse" href="#PrecioCollapse" aria-expanded="false">
-                        Precio
-                    </a>
-                    
-                    <div class="collapse mx-3 py-2" id="PrecioCollapse">
-                        <div class="values py-1">
-                            <span id="range1">
-                                0
-                            </span>
-                            <span> &dash; </span>
-                            <span id="range2">
-                                100
-                            </span>
-                        </div>
-                        <div class="slider-content">
-                            <div class="slider-track"></div>
-                            <input type="range" min="0" max="500" value="0" id="price-1" oninput="slideOne()">
-                            <input type="range" min="0" max="500" value="100" id="price-2" oninput="slideTwo()">
-                        </div>
-                    </div>
-
-                </div> -->
+            <div class="offcanvas-body" id="offcanvas-filter">
+                <!-- OffCanvas -->
+                
             </div>
         </div>
 
@@ -189,10 +110,10 @@
             <div class="page-products row gx-4">
                 <!-- Filtro -->
                 <div class="sec-filter d-none d-lg-block col-lg-3">
-                    <div class="py-3 border rounded-3 bg-white">
+                    <div class="py-3 border rounded-3 bg-white" id="normal-filter">
                         <div class="px-3 mb-3">
                             <p class="fw-bold h5">Filtrar por:</p>
-                            <input class="form-control form-control-sm" type="search" placeholder="Buscar por nombre">
+                            <input class="form-control form-control-sm" id="iNombre" type="text" placeholder="Buscar por nombre">
                         </div>
                         <div class="list-group">
                             <a class="list-group-item" data-bs-toggle="collapse" href="#CategoriasCollapse" aria-expanded="false">
@@ -201,25 +122,25 @@
                             <!-- Lista de Categorias -->
                             <div class="collapse mx-3 py-2" id="CategoriasCollapse">
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center" href="#">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Celulares">
                                         Celulares
                                         <span class="badge rounded-pill" id="catCelulares">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center" href="#">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Laptops">
                                         Laptops
                                         <span class="badge rounded-pill" id="catLaptops">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center" href="#">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Tablets">
                                         Tablets
                                         <span class="badge rounded-pill" id="catTablets">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center" href="#">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Accesorios">
                                         Accesorios
                                         <span class="badge rounded-pill" id="catAccesorios">#</span>
                                     </a>
@@ -251,8 +172,8 @@
                                 </div>
                                 <div class="slider-content">
                                     <div class="slider-track"></div>
-                                    <input type="range" id="price-1" oninput="slideOne()">
-                                    <input type="range" id="price-2" oninput="slideTwo()">
+                                    <input type="range" id="price-1" oninput="slideOne()" value="">
+                                    <input type="range" id="price-2" oninput="slideTwo()" value="">
                                 </div>
                             </div>
 
@@ -312,8 +233,9 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <!-- Script -->
-    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/filter.js"></script>
 </body>
 
 </html>
