@@ -95,6 +95,7 @@ orderInput.addEventListener("change", function () {
 // Actualizar los items del Filtrador
 function actualizarIndicadores(products) {
     numItems.innerText = products.length;
+
     if (allProducts) {
         let celulares = products.filter(prod => prod.categoria == "Celulares").length;
         document.getElementById("catCelulares").innerText = celulares;
@@ -105,6 +106,7 @@ function actualizarIndicadores(products) {
         let accesorios = products.filter(prod => prod.categoria == "Accesorios").length;
         document.getElementById("catAccesorios").innerText = accesorios;
     }
+
     if (filterProducts.length == 0) {
         const marcas = [... new Set(products.map(data => data.marca))];
         let marcasHTML = "";
@@ -146,20 +148,9 @@ function actualizarIndicadores(products) {
             });
             return result;
         }
+
     }
 
-    const precios = products.map(data => parseInt(data.precio));
-
-    let min = Math.min.apply(null,precios);
-    let max = Math.max.apply(null,precios);
-    sliderOne.min = min;
-    sliderOne.max = max;
-    sliderOne.value = min;
-    sliderTwo.min = min;
-    sliderTwo.max = max;
-    sliderTwo.value = max;
-    slideOne();
-    slideTwo();
 }
 
 //Buscar por Categoria

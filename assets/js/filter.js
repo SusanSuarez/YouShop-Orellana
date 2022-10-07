@@ -1,11 +1,8 @@
 window.addEventListener("resize", responsiveFilter);
-let valueMin;
-let valueMax;
 
 function responsiveFilter() {
     let ancho = window.innerWidth;
-    valueMin = sliderOne.value;
-    valueMax = sliderTwo.value;
+
     if (ancho <= 991) {
         if(!isNewFilter) {
             newFilter = filter_nav.innerHTML;
@@ -31,15 +28,6 @@ function responsiveFilter() {
 }
 
 function initUI() {
-    sliderOne = document.getElementById("price-1");
-    sliderTwo = document.getElementById("price-2");
-    displayValOne = document.getElementById("range1");
-    displayValTwo = document.getElementById("range2");
-    sliderTrack = document.querySelector(".slider-track");
-    sliderOne.value = parseInt(valueMin) - minGap;
-    sliderTwo.value = parseInt(valueMax) + minGap;
-    slideOne();
-    slideTwo();
 
     document.getElementById("iNombre").addEventListener("input", () => {
         actualProducts = searchNombre(totalProducts);
