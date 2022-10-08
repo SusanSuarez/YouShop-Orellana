@@ -168,6 +168,85 @@
                 </div>
             </div>
         </div>
+        
+        <div class="position-sticky bottom-0 text-end">
+            <button class="btn btn-shopping rounded-circle mb-3 me-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasShoppingCart" aria-controls="offcanvasRight">
+                <i class="fa-regular fa-bag-shopping fs-1"></i>
+                <span class="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger" id="cartItems">
+                    0
+                </span>
+            </button>
+        </div>
+
+        <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasShoppingCart" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody class="shopping-items">
+                        <tr>
+                            <td class="align-middle">
+                                <img src="https://realplaza.vtexassets.com/arquivos/ids/29436852-1600-auto" alt="item">
+                            </td>
+                            <td class="align-middle item-name">Laptop ASUS FX506LHB-HN323W 15.6 Intel Core i5 10ma generación 8GB 512GB SSD</td>
+                            <td class="item-price align-middle">S/<span>549.00</span></td>
+                            <td class="align-middle">
+                                <div class="input-group mb-1 px-1 col">
+                                    <button class="btn px-1 shopping-minus" type="button">
+                                        -
+                                    </button>
+                                    <input type="number" class="form-control text-center px-0" value="1">
+                                    <button class="btn px-1 shopping-plus" type="button">
+                                        +
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="item-trash align-middle">
+                                <button class="btn p-0 m-0">
+                                    <i class="fa-regular fa-trash text-danger"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-center">
+                    <table class="table table-hover w-75 text-center">
+                        <thead class="table-light">
+                            <th colspan="2">Resumen</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>SubTotal</th>
+                                <td>S/<span>450.00</span></td>
+                            </tr>
+                            <tr>
+                                <th>IGV</th>
+                                <td>S/<span>50.00</span></td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <th>S/<span>500.00</span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-shopping rounded-pill w-75">REALIZAR COMPRAR</button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -211,6 +290,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/filter.js"></script>

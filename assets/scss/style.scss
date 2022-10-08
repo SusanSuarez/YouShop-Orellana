@@ -5,6 +5,18 @@ body {
    font-family: 'Prompt', sans-serif;
 }
 
+.btn-shopping {
+   color: #fff;
+   background-color: #F49715;
+   border-color: #F49715;
+}
+
+.btn-shopping:hover {
+   color: #fff;
+   background-color: #ff9500;
+   border-color: #ff9500;
+}
+
 header {
    .navbar.navbar-dark {
       .container-fluid {
@@ -92,6 +104,9 @@ main {
                      .btn {
                         color: #F49715;
                         font-weight: bolder;
+                        &:focus {
+                           box-shadow: none;
+                        }
                      }
                      input {
                         font-size: 0.75em !important;
@@ -116,6 +131,46 @@ main {
                }
             }
          }
+      }
+   }
+}
+
+.shopping-items {
+   tr {
+      td{
+         font-size: 0.8em;
+         img {
+            width: 3.5rem;
+         }
+         .input-group {
+            .btn {
+               color: #F49715;
+               font-weight: bolder;
+               &:focus {
+                  box-shadow: none;
+               }
+
+            }
+            input {
+               font-size: 1em !important;
+               width: 0.85rem;
+               border: 0;
+            }
+            input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+               margin: 0;
+               -moz-appearance: textfield;
+            }
+         }
+      }
+      .item-name {
+         width: 17.5rem;
+      }
+      .item-price {
+         font-weight: bold;
+      }
+      .item-trash {
+         font-size: 1rem;
       }
    }
 }

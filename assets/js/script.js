@@ -2,6 +2,7 @@ const orderInput = document.getElementById("selectOrder");
 const numItems = document.getElementById("numItems");
 const filter_nav = document.getElementById("normal-filter");
 const off_filter = document.getElementById("offcanvas-filter");
+const shopping_items = document.getElementById("cartItems");
 let isNewFilter = false;
 let newFilter;
 let allProducts = true;
@@ -35,6 +36,33 @@ class Producto {
         this.ratio = ratio;
     }
     // Funciones
+    cardProduct() {
+        return `
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="shadow card rounded-3">
+                <img src="${this.imagen}" class="card-img-top rounded-top rounded-3 p-2">
+                <div class="card-body py-1">
+                    <p class="name-p m-0">${this.nombre}</p>
+                    <p class="text-muted mark-p">Marca: <span>${this.marca}</span></p>
+                    <p class="price-p m-0 mb-1">S/<span>${this.precio}</span></p>
+                    <hr class="my-2">
+                    <div class="row">
+                        <div class="input-group mb-1 px-1 col">
+                            <button class="btn px-1 item-minus" type="button">
+                                -
+                            </button>
+                            <input type="number" class="form-control text-center px-0" value="1" min="1">
+                            <button class="btn px-1 item-plus" type="button">
+                                +
+                            </button>
+                        </div>
+                        <button class="h-100 btn btn-quantity rounded-pill col" id-product="${this.idProducto}">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `; 
+    }
 }
 
 async function getData() {
@@ -169,31 +197,19 @@ for (let i = 0; i < headerCategorias.length; i++) {
 function mostrarProductos(products) {
     let html = "";
     products.forEach(p => {
-        html += `
-        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-            <div class="shadow card rounded-3">
-                <img src="`+p.imagen+`" class="card-img-top rounded-top rounded-3 p-2">
-                <div class="card-body py-1">
-                    <p class="name-p m-0">`+p.nombre+`</p>
-                    <p class="text-muted mark-p">Marca: <span>`+p.marca+`</span></p>
-                    <p class="price-p m-0 mb-1">S/<span>`+p.precio+`</span></p>
-                    <hr class="my-2">
-                    <div class="row">
-                        <div class="input-group mb-1 px-1 col">
-                            <button class="btn px-1" type="button">
-                                -
-                            </button>
-                            <input type="number" class="form-control text-center px-0" value="1">
-                            <button class="btn px-1" type="button">
-                                +
-                            </button>
-                        </div>
-                        <button class="h-100 btn btn-quantity rounded-pill col">Agregar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        `; 
+        html += p.cardProduct(); 
     });
     document.getElementById("lista-p").innerHTML = html;
+
+    $(".item-minus").on("click", function() {
+        let inputCant = this.parentElement.childNodes[3];
+        let cant = parseInt(inputCant.value);
+        inputCant.value = (cant > 1)? cant-1: cant;
+    });
+    
+    $(".item-plus").on("click", function() {
+        let inputCant = this.parentElement.childNodes[3];
+        let cant = parseInt(inputCant.value);
+        inputCant.value = cant+1;
+    });
 }
