@@ -266,6 +266,7 @@ function cargarCarrito() {
             localStorage.setItem('cart', JSON.stringify(carrito));
             item.parentElement.parentElement.remove();
             actualizarTablaResumen();
+            shopping_items.innerText = carrito.length;
         });
     });
 }
