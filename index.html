@@ -29,34 +29,34 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 justify-content-around align-items-center d-none d-lg-flex">
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Celulares">Celulares</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Celulares">Celulares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Laptops">Laptops</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Laptops">Laptops</a>
                         </li>
                         <li class="nav-item">
                             <a href="./index.html"><img src="./assets/img/logo.svg" alt="logo"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Tablets">Tablets</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Tablets">Tablets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Accesorios">Accesorios</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Accesorios">Accesorios</a>
                         </li>
                     </ul>
                     <!-- Mobile Navbar -->
                     <ul class="navbar-nav w-100 d-flex d-lg-none justify-content-around align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Celulares">Celulares</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Celulares">Celulares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Laptops">Laptops</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Laptops">Laptops</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Tablets">Tablets</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Tablets">Tablets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link filter-all-cat" href="#" cat="Accesorios">Accesorios</a>
+                            <a class="nav-link filter-all-cat" href="#" data-cat="Accesorios">Accesorios</a>
                         </li>
                     </ul>
                 </div>
@@ -122,25 +122,25 @@
                             <!-- Lista de Categorias -->
                             <div class="collapse mx-3 py-2" id="CategoriasCollapse">
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Celulares">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" data-cat2="Celulares">
                                         Celulares
                                         <span class="badge rounded-pill" id="catCelulares">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Laptops">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" data-cat2="Laptops">
                                         Laptops
                                         <span class="badge rounded-pill" id="catLaptops">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Tablets">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" data-cat2="Tablets">
                                         Tablets
                                         <span class="badge rounded-pill" id="catTablets">#</span>
                                     </a>
                                 </p> 
                                 <p class="text-category">
-                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" cat="Accesorios">
+                                    <a class="d-flex justify-content-between align-items-center filter-cat" href="#" data-cat2="Accesorios">
                                         Accesorios
                                         <span class="badge rounded-pill" id="catAccesorios">#</span>
                                     </a>
@@ -195,55 +195,34 @@
                         </tr>
                     </thead>
                     <tbody class="shopping-items">
-                        <tr>
-                            <td class="align-middle">
-                                <img src="https://realplaza.vtexassets.com/arquivos/ids/29436852-1600-auto" alt="item">
-                            </td>
-                            <td class="align-middle item-name">Laptop ASUS FX506LHB-HN323W 15.6 Intel Core i5 10ma generación 8GB 512GB SSD</td>
-                            <td class="item-price align-middle">S/<span>549.00</span></td>
-                            <td class="align-middle">
-                                <div class="input-group mb-1 px-1 col">
-                                    <button class="btn px-1 shopping-minus" type="button">
-                                        -
-                                    </button>
-                                    <input type="number" class="form-control text-center px-0" value="1">
-                                    <button class="btn px-1 shopping-plus" type="button">
-                                        +
-                                    </button>
-                                </div>
-                            </td>
-                            <td class="item-trash align-middle">
-                                <button class="btn p-0 m-0">
-                                    <i class="fa-regular fa-trash text-danger"></i>
-                                </button>
-                            </td>
-                        </tr>
                         
                     </tbody>
                 </table>
-                <div class="d-flex justify-content-center">
-                    <table class="table table-hover w-75 text-center">
-                        <thead class="table-light">
-                            <th colspan="2">Resumen</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>SubTotal</th>
-                                <td>S/<span>450.00</span></td>
-                            </tr>
-                            <tr>
-                                <th>IGV</th>
-                                <td>S/<span>50.00</span></td>
-                            </tr>
-                            <tr>
-                                <th>Total</th>
-                                <th>S/<span>500.00</span></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="text-center">
-                    <button class="btn btn-shopping rounded-pill w-75">REALIZAR COMPRAR</button>
+                <div class="d-block" data-table-shopping>
+                    <div class="d-flex justify-content-center">
+                        <table class="table table-hover w-75 text-center">
+                            <thead class="table-light">
+                                <th colspan="2">Resumen</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>SubTotal</th>
+                                    <td>S/<span data-table-sub></span></td>
+                                </tr>
+                                <tr>
+                                    <th>IGV</th>
+                                    <td>S/<span data-table-igv></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <th>S/<span data-table-total></span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-shopping rounded-pill w-75">REALIZAR COMPRAR</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -294,9 +273,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- UUID -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" 
+    integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/filter.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
