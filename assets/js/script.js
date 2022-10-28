@@ -1,5 +1,6 @@
 import { Producto } from "./Producto.js";
 import { Carrito } from "./Carrito.js";
+import { validar } from "./validaciones.js";
 
 const orderInput = document.getElementById("selectOrder");
 const numItems = document.getElementById("numItems");
@@ -46,12 +47,9 @@ async function getAllProducts() {
 
 // Function to sort product list
 async function orderBy(order, lista) {
-    let products;
-    if (lista == undefined) {
-        products = await getAllProducts();
-    } else {
-        products = lista;
-    }
+    // Nullish Coalescing
+    let products = lista ?? await getAllProducts();
+
     switch (order) {
         case 0:
             products.sort((i, j) => j.ratio - i.ratio);
@@ -100,9 +98,10 @@ function actualizarIndicadores(products) {
     }
 
     if (filterProducts.length == 0) {
+        // Spread
         const marcas = [... new Set(products.map(data => data.marca))];
         let marcasHTML = "";
-        marcas.forEach(marca => {
+        marcas.forEach((marca) => {
             marcasHTML += `
             <div class="form-check form-switch">
                 <input class="form-check-input switch-marca" type="checkbox" id="box`+marca+`" data-mark="`+marca+`">
@@ -195,12 +194,14 @@ function mostrarProductos(products) {
 
             cargarCarrito();
             actualizarTablaResumen();
+            mostrarToast();
         });
     });
 
 }
 
 function cargarCarrito() {
+    // Falsy
     const carrito = JSON.parse(localStorage.getItem('cart')) || [];
     const itemsCartHTML = document.querySelector('.shopping-items');
     const tableShopping = document.querySelector('[data-table-shopping]');
@@ -242,6 +243,7 @@ function cargarCarrito() {
     });
 
     function actualizarItemCart (id, cant) {
+        // Falsy
         const carrito = JSON.parse(localStorage.getItem('cart')) || [];
         const i = carrito.findIndex((item) => item.id === id);
 
@@ -259,6 +261,7 @@ function cargarCarrito() {
     deleteItems.forEach((item) => {
         item.addEventListener('click',(e) => {
             const id = e.target.dataset.itemtrash;
+            // Falsy
             const carrito = JSON.parse(localStorage.getItem('cart')) || [];
             const i = carrito.findIndex((item) => item.id === id);
 
@@ -268,11 +271,13 @@ function cargarCarrito() {
             actualizarTablaResumen();
             shopping_items.innerText = carrito.length;
         });
+        
     });
 }
 
 function actualizarTablaResumen() {
     const montos = [];
+    // Falsy
     const carrito = JSON.parse(localStorage.getItem('cart')) || [];
     carrito.forEach((item) => {
         montos.push(item.monto);
@@ -281,6 +286,10 @@ function actualizarTablaResumen() {
     tableTotal.innerText = parseFloat(total).toFixed(2);
     tableSub.innerText = parseFloat(total*.82).toFixed(2);
     tableIGV.innerText = parseFloat(total*.18).toFixed(2);
+
+    if (carrito.length == 0) {
+        cargarCarrito();
+    }
 }
 
 function responsiveFilter() {
@@ -363,3 +372,24 @@ function initUI() {
         return result;
     }
 }
+
+function mostrarToast() {
+    const toast = new bootstrap.Toast(document.querySelector(".toast"));
+    toast.show();
+}
+
+document.getElementById("btnComprar").addEventListener('click',() => {
+    const modal = new bootstrap.Modal(document.querySelector(".modal"));
+    modal.show();
+});
+
+const inputsPedido = document.querySelectorAll(".inPedido");
+
+inputsPedido.forEach((input) => {
+    input.addEventListener('focus', (input) => {
+        input.target.parentElement.classList.remove("was-validated");
+    });
+    input.addEventListener('blur', (input) => {
+        validar(input.target);
+    });
+});

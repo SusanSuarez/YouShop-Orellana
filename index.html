@@ -221,7 +221,7 @@
                         </table>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-shopping rounded-pill w-75">REALIZAR COMPRAR</button>
+                        <button class="btn btn-shopping rounded-pill w-75" id="btnComprar">REALIZAR COMPRAR</button>
                     </div>
                 </div>
             </div>
@@ -261,6 +261,91 @@
             <span>Copyright © YouShop 2022</span>
         </div>
     </footer>
+
+    <div>
+        <div class="toast-container position-fixed bottom-0 start-0 p-3">
+            <div id="liveToast" class="toast text-bg-youshop w-100" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        Producto Agregado
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <legend class="text-center fw-bolder mb-3 fs-3">PROCESAR PEDIDO</legend>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control inPedido" id="inNombre" placeholder="Nombre y Apellidos" data-tipo="nombres" required>
+                                <label for="inNombre">Nombre y Apellidos</label>
+                                <div class="invalid-tooltip"></div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control inPedido" id="inEmail" placeholder="Correo Electronico" data-tipo="email" required>
+                                <label for="inEmail">Correo Electronico</label>
+                                <div class="invalid-tooltip"></div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control inPedido" id="inCelular" placeholder="Número de Celular" data-tipo="celular" required pattern="[9][0-9]{8}" maxlength="9">
+                                <label for="inCelular">Número de Celular</label>
+                                <div class="invalid-tooltip"></div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control inPedido" id="inDireccion" placeholder="Dirección de Envio" data-tipo="direccion" required>
+                                <label for="inDireccion">Dirección de Envio</label>
+                                <div class="invalid-tooltip"></div>
+                            </div>
+
+                            <legend class="text-center mb-3 fs-4">Datos de Pago</legend>
+
+                            <label class="form-label">Numero de Tarjeta</label>
+                            <div class="input-group mb-3">
+                                <input type="tel" id="cardnum" class="form-control inPedido" placeholder="0000 0000 0000 0000" data-tipo="tarjeta" required pattern="\d*" maxlength="19">
+                                <span class="input-group-text"><i class="fa-regular fa-credit-card-front"></i></span>
+                                <div class="invalid-tooltip"></div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-7">
+                                    <label class="form-label">Fecha de Expiración</label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <select class="form-select" required>
+                                                <option disabled selected>Mes</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select" required>
+                                                <option disabled selected>Año</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label class="form-label">CVV</label>
+                                    <input class="form-control inPedido" type="number" placeholder="CVV" data-tipo="cvv" required>
+                                    <div class="invalid-tooltip"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">CANCELAR</button>
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-shopping w-100">PROCESAR</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 
     <!-- Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

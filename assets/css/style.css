@@ -9,11 +9,18 @@ body {
   background-color: #F49715;
   border-color: #F49715;
 }
-
 .btn-shopping:hover {
   color: #fff;
-  background-color: #ff9500;
-  border-color: #ff9500;
+  background-color: #f08c00;
+  border-color: #f08c00;
+}
+
+.text-bg-youshop {
+  color: #fff;
+  background: #F49715;
+}
+.text-bg-youshop:hover {
+  background-color: #f08c00;
 }
 
 header .navbar.navbar-dark .container-fluid .navbar-brand img {

@@ -9,12 +9,19 @@ body {
    color: #fff;
    background-color: #F49715;
    border-color: #F49715;
+   &:hover {
+      color: #fff;
+      background-color: #f08c00;
+      border-color: #f08c00;
+   }
 }
 
-.btn-shopping:hover {
+.text-bg-youshop {
    color: #fff;
-   background-color: #ff9500;
-   border-color: #ff9500;
+   background: #F49715;
+   &:hover {
+      background-color: #f08c00;
+   }
 }
 
 header {
