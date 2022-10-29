@@ -277,7 +277,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <form>
+                        <form id="formSubmit">
                             <legend class="text-center fw-bolder mb-3 fs-3">PROCESAR PEDIDO</legend>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control inPedido" id="inNombre" placeholder="Nombre y Apellidos" data-tipo="nombres" required>
@@ -304,30 +304,24 @@
 
                             <label class="form-label">Numero de Tarjeta</label>
                             <div class="input-group mb-3">
-                                <input type="tel" id="cardnum" class="form-control inPedido" placeholder="0000 0000 0000 0000" data-tipo="tarjeta" required pattern="\d*" maxlength="19">
+                                <input type="tel" class="form-control inPedido cc-number" placeholder="0000 0000 0000 0000" data-tipo="tarjeta" autocomplete="cc-number" maxlength="19" required>
                                 <span class="input-group-text"><i class="fa-regular fa-credit-card-front"></i></span>
                                 <div class="invalid-tooltip"></div>
                             </div>
-                            <div class="row mb-5">
-                                <div class="col-7">
+                            <div class="row pb-5">
+                                <div class="col">
                                     <label class="form-label">Fecha de Expiración</label>
-                                    <div class="row">
-                                        <div class="col">
-                                            <select class="form-select" required>
-                                                <option disabled selected>Mes</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <select class="form-select" required>
-                                                <option disabled selected>Año</option>
-                                            </select>
-                                        </div>
+                                    <div class="input-group">
+                                        <input class="form-control inPedido expiry" type="tel" placeholder="MM / YYYY" data-tipo="expiracion" required>
+                                        <div class="invalid-tooltip"></div>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <label class="form-label">CVV</label>
-                                    <input class="form-control inPedido" type="number" placeholder="CVV" data-tipo="cvv" required>
-                                    <div class="invalid-tooltip"></div>
+                                    <div class="input-group">
+                                        <input class="form-control inPedido cc-cvc" type="tel" placeholder="CVV" data-tipo="cvv" autocomplete="off" maxlength="3" required>
+                                        <div class="invalid-tooltip"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
@@ -358,6 +352,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- PayForm -->
+    <script src="./node_modules/payform/dist/payform.min.js"></script>
     <!-- UUID -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" 
     integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" 

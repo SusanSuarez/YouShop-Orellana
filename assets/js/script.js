@@ -10,6 +10,12 @@ const shopping_items = document.getElementById("cartItems");
 const tableSub = document.querySelector('[data-table-sub]');
 const tableIGV = document.querySelector('[data-table-igv]');
 const tableTotal = document.querySelector('[data-table-total]');
+let inCard = document.querySelector('.cc-number');
+let inCVV = document.querySelector('.cc-cvc');
+let inExpiry = document.querySelector('.expiry');
+payform.cardNumberInput(inCard);
+payform.cvcInput(inCVV)
+payform.expiryInput(inExpiry);
 
 let isNewFilter = false;
 let newFilter;
@@ -392,4 +398,14 @@ inputsPedido.forEach((input) => {
     input.addEventListener('blur', (input) => {
         validar(input.target);
     });
+});
+
+document.querySelector("#formSubmit").addEventListener('submit',(e) => {
+    e.preventDefault();
+    const nombres = document.getElementById("inNombre").value;
+    const correo = document.getElementById("inEmail").value;
+    const celular = document.getElementById("inCelular").value;
+    const direccion = document.getElementById("inDireccion").value;
+    localStorage.setItem('cliente', JSON.stringify({nombres,correo,celular,direccion}));
+    window.location.href = "./shop.html";
 });

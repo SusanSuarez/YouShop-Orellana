@@ -23,6 +23,10 @@ body {
   background-color: #f08c00;
 }
 
+.text-youshop {
+  color: #ff9500;
+}
+
 header .navbar.navbar-dark .container-fluid .navbar-brand img {
   width: 10rem;
 }
@@ -155,6 +159,20 @@ footer .footer-copy {
 }
 footer .footer-copy span {
   font-size: 0.75em;
+}
+
+.check-shop i {
+  font-size: 7.5em;
+  --fa-primary-color: #ff9500;
+  --fa-secondary-color: #f1f1f1;
+  --fa-secondary-opacity: 1.0;
+}
+.check-shop h4 {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.check-shop div p {
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */

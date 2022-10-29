@@ -24,6 +24,10 @@ body {
    }
 }
 
+.text-youshop {
+   color: #ff9500;
+}
+
 header {
    .navbar.navbar-dark {
       .container-fluid {
@@ -205,5 +209,21 @@ footer {
       span {
          font-size: 0.75em;
       }
+   }
+}
+
+.check-shop {
+   i {
+      font-size: 7.5em;
+      --fa-primary-color: #ff9500;
+      --fa-secondary-color: #f1f1f1;
+      --fa-secondary-opacity: 1.0;
+   }
+   h4 {
+      font-weight: bolder;
+      font-size: 1.5em;
+   }
+   div p {
+      font-size: 1.1em;
    }
 }
